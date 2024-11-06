@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 
-export default function Admin() {
+export default function Admin({addInputForm}) {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [position, setPosition] = useState("");
@@ -53,7 +53,7 @@ export default function Admin() {
                 />
                 <input 
                     type="text"
-                    placeholder="Lasst Name"
+                    placeholder="Last Name"
                     value={lastName}
                     onChange={handleLastName}
                     className="placeholder:text-center"
@@ -67,7 +67,7 @@ export default function Admin() {
                 />
 
                 <button type="submit" 
-                className="bg-emerald-500 hover:bg-emerald-600 active:bg-emerald-700 text-white p-2 rounded-lg w-20">Save</button>
+                className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white p-2 rounded-lg w-20 font-semibold">Save</button>
             </form>
         </div>
     )

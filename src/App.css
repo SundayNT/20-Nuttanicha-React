@@ -7,3 +7,14 @@
 body {
   background-color: #EEEEEE;
 }
+
+input {
+  border: 1px solid black;
+  width: 23%;
+}
+
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+  padding: 15px;
+}
